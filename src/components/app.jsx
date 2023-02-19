@@ -4,13 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSVLink } from "react-csv";
 import AddListModal from "./addListModal";
 import ListCard from "./listCard";
+import { Statuses, Tasks } from "../dummyData/dummyData";
 
 const App = () => {
-  const [tasks, setTasks] = useState([]);
-  const [statuses, setStatuses] = useState(["Tasks"]);
+  const [tasks, setTasks] = useState(Tasks);
+  const [statuses, setStatuses] = useState(Statuses);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    saveTasksToLocalStorage(Tasks);
     loadTasksFromLocalStorage();
   }, []);
 
