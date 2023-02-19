@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Getting Started with Task Manager
+
+Hosted at : https://mayank-task-manager.netlify.app/
+
+Screenshot:
+![image](https://user-images.githubusercontent.com/38762766/219949924-bf378d81-4360-4084-bbcf-8d3a3fc68ee7.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
